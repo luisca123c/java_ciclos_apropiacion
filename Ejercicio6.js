@@ -4,11 +4,12 @@ for (let i= 0; i  < 15; i++)
         pelicula = parseInt(pelicula);
         if (pelicula == 1) 
         {
-            let edad = parseInt(prompt("Ingrese la edad del comprador:"));
+            let edad = prompt("Ingrese la edad del comprador:");
             edad = parseInt(edad);
             if (edad < 18)
             {
                 alert("No se pudo comprar la pelicula, es para mayores.");
+                i--;
             }
         }
     }
